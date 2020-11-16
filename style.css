@@ -1,0 +1,30 @@
+
+body {
+background-color: black;
+}
+
+.theMarquee {
+    height: 40px;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .theMarquee div {
+    display: block;
+    width: 200%;
+    height: 200px;
+    font-size: 30px;
+    position: absolute;
+    overflow: hidden;
+    animation: marqueeEffect 40s linear infinite;
+  }
+  
+  .theMarquee span {
+    width: 100%;
+  }
+  
+  @keyframes marqueeEffect {
+    0% { left: 0; }
+    100% { left: -100%; }
+  }
